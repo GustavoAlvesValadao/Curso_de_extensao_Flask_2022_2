@@ -45,7 +45,7 @@ def login():
 #Rota para validar o formulário
 @app.route("/login_validar", methods=["POST"])
 def login_validar():
-    if request.form["usuario"] == "alves" && request.form["senha"] == "12345":
+    if request.form["usuario"] == "alves" and request.form["senha"] == "12345":
         session["usuario"] = request.form["usuario"]
         session ["codigo"] = 1
         return redirect(url_for("acesso_restrito"))

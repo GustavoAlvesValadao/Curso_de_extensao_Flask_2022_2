@@ -38,7 +38,7 @@ def form_recebe():
         return "Não pode chamar direto no GET", 200
 
 #Rota form de login
-@app.rout("/login")
+@app.route("/login")
 def login():
     return render_template("login.html"), 200
 
